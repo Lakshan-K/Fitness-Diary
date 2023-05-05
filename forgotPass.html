@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="english">
+<head>
+    <title>Forgot Password Page</title>
+    <link href="newProject.css" type="text/css"  rel="stylesheet">
+    <script src="project.js"></script>
+   
+</head>
+<body>
+  <br><br>
+    <h1>Forgot Your Password?</h1>
+    <br><br>
+    <form id="securityQuestionPage">
+ <div class="form">
+     <h2>Please Input Your Answer Below:</h2>
+     <label for="securityQuestion">Security Question:</label><br>
+		 <select id="securityQuestion" name="securityQuestion">
+			 <option value="What was the name of your favorite pet?" selected="selected">What was the name of your favorite pet?</option>
+             <option value="What is your mother's maiden name?">What is your mother's maiden name?</option>
+			 <option value="What name is the street you grew up in?">What name is the street you grew up in?</option>
+			 <option value="What is your favorite food?">What is your favorite food?</option>
+			 <option value="Who is your favorite professor?">Who is your favorite professor?</option>
+		 </select>
+		 <br>
+	
+	 <label for="securityAnswer">Answer:</label><br>
+	 <input type="text" id="securityAnswer" name="securityAnswer"></body>
+     <br><br>
+         <input type="submit" onclick="forgot()" value="Submit">
+  </div> 
+  </form>                                   
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="En">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>New Entry</title>
+  <link rel="stylesheet" type="text/css" href="NewProject.css" title="style" />
+  <script src="project.js"></script>
+
+</head>
+<h1> Fitness Diary</h1>
+<body>
+<div class="form" id="form">
+ <div class="newentry">
+      <button id="newEntry" onclick="newEntryPage()" >New Entry</button>
+      <button id="logOutLock" onclick="homePage()">Log out & Lock</button>
+ </div>
+ <br><br>
+
+ <div class="createEntry" id="createEntry">
+     
+     <div class="button">
+     <button id="dateStamp" onclick="addDateStamp()" >DATE<!---Date Stamp ---></button>
+     <button id="changeFont" onclick="showChangeFont()" >FONT<!---Font ---></button>
+     <button id="changeTextColour" onclick="showChangeTextColour()" >Tx-CLR<!---Text Colour< ---></button>
+     <button id="backgroundColour" onclick="showChangeBackgroundColour()" >Bg-CLR<!---Background Colour ---></button>
+
+ </div>
+     <br>
+    <p id="showDateStamp"></p>
+    <div class="textarea">
+      <textarea id="textEntry" name="textEntry" rows="15" cols="50"></textarea>
+    </div>
+
+    <br>
+  
+    <input type="file" id="addPhoto" accept="image/png, image/jpg, image/jpeg">
+    
+    <div class="addPhoto">
+
+      </div><br>
+
+    
+     <div class="submitL">
+         <button  onclick="saveDiary()" id="save">Submit</button>
+         < <button  onclick="getDiary()" id="save">Load up</button>>
+     </div>
+
+  </div>
+
+  <div class="changeFontForm" id="fontForm">
+    <h3>Please select a font style</h3>
+    
+      <input type="radio" id="timesNewRoman" name="Font" value="TMR">
+      <label for="timesNewRoman">Times New Roman</label><br>
+
+      <input type="radio" id="arial" name="Font" value="ARIAL">
+      <label for="arial">Arial</label><br>
+
+      <input type="radio" id="bradleyHand" name="Font" value="BH">
+      <label for="bradleyHand">Bradley Hand</label><br>
+
+      <input type="radio" id="arialBlack" name="Font" value="AB">
+      <label for="arialBlack">Arial Black</label><br><br>
+
+      <button onclick="changeFont()">Change Font</button>
+
+  </div>
+
+  <div class="changeTextColourForm" id="textColourForm">
+    <h3>Please select a colour</h3>
+      <input type="radio" id="pink" name="textColour" value="PINK">
+      <label for="pink">Pink</label><br>
+
+      <input type="radio" id="blue" name="textColour" value="BLUE">
+      <label for="blue">Blue</label><br>
+
+      <input type="radio" id="green" name="textColour" value="GREEN">
+      <label for="green">Green</label><br>
+
+      <input type="radio" id="purple" name="textColour" value="PURPLE">
+      <label for="purple">Purple</label><br>
+
+      <input type="radio" id="originalTextColour" name="textColour" value="BLACK">
+      <label for="originalTextColour">Reset Colour</label><br><br>
+
+      <button onclick ="changeTextColour()">Change Colour</button>
+
+  </div>
+
+  <div class="changeBackgroundColourForm" id="backgroundColourForm">
+    <h3>Please select a colour</h3>
+      <input type="radio" id="orange" name="backgroundColour" value="ORANGE" checked>
+      <label for="orange">Orange</label><br>
+
+      <input type="radio" id="red" name="backgroundColour" value="RED">
+      <label for="red">Red</label><br>
+
+      <input type="radio" id="purple" name="backgroundColour" value="PURPLE">
+      <label for="purple">Purple</label><br>
+
+      <input type="radio" id="teal" name="backgroundColour" value="TEAL">
+      <label for="teal">Teal</label><br>
+
+      <input type="radio" id="originalBackground" name="backgroundColour" value="OG">
+      <label for="originalBavkground">Reset Background Colour</label><br><br>
+
+      <button onclick="changeBackgroundColour()">Change Colour</button>
+
+  </div>
+
+</div>
+
+</body>
+  
+</html>

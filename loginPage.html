@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="newProject.css" >
+    <script src="project.js"></script>
+    
+
+</head>
+<body>
+    <!--Lakshan Start-->   
+ <br><br>
+
+ <h1>Login</h1> <!--make this appear at the top center of the page-->
+    
+ <br><br>
+ 
+ <form id="login" method="post" action="potential server URL">    
+      <div class="form">
+   
+         <label for="username:">Username:</label><br>
+         <input type="text" id="usernameL" name="username">
+         <br>
+
+         <label for="password">Password:</label> <br>
+         <input type="password" id="passwordL" name="password" >
+
+         <!--need to rename the forgot password file because there shouldn't be a space between forgot and password-->
+         <div class="forgotPassL"> <a href="forgotPass.html"> Forgot Password </a> </div> 
+         <!--insert link to go to password recovery-->
+         <br> 
+         
+     <input class="submitL" id="submitLogin" type="button" onclick="loginButton()" value="Login">
+      </div>
+ </form>  
+</body>
+</html>

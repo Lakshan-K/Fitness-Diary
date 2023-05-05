@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Account Creation</title>
+	<link href="newProject.css" type="text/css" rel="stylesheet">
+	<script src="project.js"></script>
+</head>
+
+<body>
+	<h1>Create Your Account for your Fitness Diary</h1>
+	<form method="post" action="">
+		<div class="form">
+			<label for="firstName">First Name:</label> <br>
+			<input type="text" id="firstName" name="firstName">
+			<br>
+
+
+			<label for="lastName">Last Name:</label><br>
+			<input type="text" id="lastName" name="lastName">
+			<br>
+
+
+			<label for="username">Username:</label><br>
+			<input type="text" id="username" name="username" pattern="[A-Za-z0-9]{6,}" required>
+
+			<!--not sure if we need a character limit-->
+			<br>
+
+			<label for="password">Password:</label> <br>
+			<input type="password" id="password" name="password"
+				pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W_]).{8,}" required>
+			<!--10 character min, 1 capital, 1 lower case, 1 special character, 1 number-->
+			<!--should we make some kind of notification like if they don't complete this, then red text would appear onfocus function to appear, can use JS-->
+			<!--do we want to do the requirements on JS instead? passCheck for use-->
+
+			<br>
+
+
+			<label for="confirmPassword">Confirm Password:</label><br>
+			<input type="password" id="confirmPassword" name="confirmPassword">
+
+			<br>
+			<!--confirm if not matching (red writing) can use onfocus function to appear if not matching, can use JS-->
+			<!--do we want to do the requirements on JS instead? passMatch() for use-->
+
+			<label for="securityQuestion">Security Question:</label>
+			<br>
+			<select id="securityQuestion" name="securityQuestion">
+				<option value="What was the name of your favorite pet?" selected="selected">What was the name of your
+					favorite pet?</option>
+				<option value="What is your mother's maiden name?">What is your mother's maiden name?</option>
+				<option value="What name is the street you grew up in?">What name is the street you grew up in?</option>
+				<option value="What is your favorite food?">What is your favorite food?</option>
+				<option value="Who is your favorite professor?">Who is your favorite professor?</option>
+			</select>
+			<br>
+
+			<label for="securityAnswer">Answer:</label><br>
+			<input type="text" id="securityAnswer" name="securityAnswer">
+</body>
+
+<br><br>
+<div class="button">
+	<input type="submit" onclick="createAccount()" value="Create Account">
+	<input type="reset" value="Clear">
+	<button id="returnbutton" onclick="location.href='loginPage.html'">Return to Login</button>
+</div>
+</div>
+</form>
+</body>
+
+</html>

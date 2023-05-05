@@ -1,0 +1,254 @@
+/*Yuxin Song start*/
+/*CSS file for all html pages*/
+h1,h2{
+  text-align: center;
+  text-decoration: solid;
+}
+
+/*for all the form space*/
+.form{
+  border-radius: 10px;
+  background-color: rgba(245, 244, 244, 0.87);
+  padding: 20px;
+  margin-top:0;
+  margin-left:300px;
+  margin-right: 300px;;
+  margin-bottom:0;
+   
+}
+
+/*for all the input textbox and select box*/
+input[type=text], input[type=password], select{
+
+  font-size:large;
+  width: 90%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+   
+}
+
+#returnbutton {
+  margin:0;
+}
+
+/*particular for account creation "clear" and "submit" input button*/
+input[type=submit], input[type=reset], #returnbutton {
+
+  width:30%;
+  background-color: lightgray;
+  color:black;
+  border: none;
+  text-align: center;
+  font-size:medium;
+  border-radius: 4px;
+  display: inline-block;
+  height: 50px;
+
+  }
+
+/*particular for account creation "clear" input button*/
+input[type=reset]:hover{
+
+  background-color: #ccc;
+
+}
+
+/*particular for account creation "submit" input button*/
+input[type=submit]:hover{
+
+  background-color: #ccc;
+
+}
+
+/*for the buttons' space of account creation page and homepage */
+.button{   
+
+ margin-left: 20%;
+ margin-right: 20%;
+
+}
+
+
+/*for the buttons' space of forgot password page and login */
+.submitL{
+
+  margin-left: 46%;
+  margin-right: 45%;
+  
+
+}
+
+
+/*for all the buttons other than buttons of homepage */
+button{
+
+  width:100px;
+  background-color: lightgray;
+  color:black;
+  border: none;
+  text-align: center;
+  font-size:medium;
+  border-radius: 4px;
+  display: inline-block;
+  height: 50px;
+
+}
+
+/*for the buttons*/
+button:hover{
+
+  background-color: #ccc;
+
+}
+/*for the buttons of homepage and new entry*/
+#homepageL, #homepageC,#newEntry,#logOutLock{
+
+  width:40%;
+  background-color: lightgray;;
+  color:black;
+  border: none;
+  text-align: center;
+  border-radius: 4px;
+  display: inline-block;
+  height: 50px;
+  margin-left: 35px;
+  font-size: medium;
+
+}
+
+/*for the buttons of homepage and new entry*/
+#homepageL:hover{
+  background-color: #ccc;
+}
+
+/*for the buttons of homepage and new entry*/
+#homepageC:hover{
+  background-color: #ccc;
+}
+
+/*for the buttons of homepage and new entry*/
+#newEntry:hover{
+  background-color: #ccc;
+}
+
+/*for the buttons of homepage and new entry*/
+#logOutLock:hover{
+  background-color: #ccc;
+}
+
+/*to hide the new entry section until the user clicks on the new entry button*/
+#createEntry {
+  display: none;
+}
+
+/*for the customized buttons in new entry page*/
+#dateStamp,#changeFont,#changeTextColour,#backgroundColour{
+  width:20%;
+  background-color:whitesmoke ;
+  color:black;
+  border: 2px solid lightgray;
+  text-align: center;
+  border-radius: 4px;
+  display: inline-block;
+  height: 50px;
+  margin-left: 10px;
+  font-size: xx-small;
+  word-wrap: break-word;
+  overflow-wrap:break-word;
+}
+/*for the customized buttons in new entry page*/
+#dateStamp:hover{
+
+  background-color:lightgreen;
+}
+
+/*for the customized buttons in new entry page*/
+#changeFont:hover{
+
+  background-color:lightgreen;
+}
+
+/*for the customized buttons in new entry page*/
+#changeTextColour:hover{
+
+  background-color:lightgreen;
+}
+
+/*for the customized buttons in new entry page*/
+#backgroundColour:hover{
+
+  background-color:lightgreen;
+}
+
+
+
+/*for the textarea*/
+textarea{
+  resize: none;
+  border:none;
+  width:600px;
+  height:400px;
+  text-align:justify;
+}
+
+ /*for the forms for styling modifications*/
+#fontForm, #textColourForm, #backgroundColourForm {
+    display: none;
+    position: fixed;
+    bottom: 270px;
+    right: 315px;
+    border: 2px solid lightgray;
+    padding: 10px
+
+}
+
+/*for the photo box*/
+.addPhoto {
+  width: 375px;
+  height: 211px;
+  border: 1px solid black;
+  background-position: center; 
+  background-size: cover;
+  
+}
+
+/*for the "forgot password" hyperlink space*/
+.forgotPassL{
+
+  text-align: center;
+
+}
+
+/*for the text of "forgot password" hyperlink */
+.forgotPassL a{
+
+  color: blue;
+
+}
+
+/* for the buttons on the home page */
+
+ .button-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .button1{
+      margin-left: auto;
+      margin-right: 45px;
+    }
+    
+    .button2{
+      margin-right: auto;
+      
+    }
+    
+    button {
+      display: inline-block;
+      margin: 10px;
+    }
