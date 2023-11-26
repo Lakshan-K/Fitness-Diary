@@ -18,12 +18,30 @@ This project is a password-protected Fitness Diary designed using HTML, CSS, and
 - **Secure Logout**: Users can securely log out and lock the diary using the "log out & lock" button for enhanced privacy.
 
 ### How to Use
-Instructions and code are provided in this repository to help users set up and use the Fitness Diary efficiently.
+- **Access the Project**: Explore the Fitness Diary at [Fitness Diary Project](https://lakshan-k.github.io/Fitness-Diary/).
+- **Clone or Download the Repository**:
+  - Click on the "Clone or download" button on the repository page.
+  - Copy the provided URL or download the ZIP file.
+- **Setup and Installation**:
+  - If you downloaded the ZIP file, extract it to your desired location.
+  - Open the project directory in your code editor.
+- **Open the Diary**:
+  - Navigate to the root folder and locate the index.html file.
+  - Open index.html in a web browser to access the Fitness Diary.
+- **Create an Account**:
+  - Use the "Account Creation" page to create a new account.
+  - Enter a username, password, and a recovery question-answer pair.
+- **Log In and Start Logging Workouts**:
+  - Use the created credentials to log in to your Diary through the login page.
+  - Start logging workouts by entering text, uploading images, and customizing the layout.
+- **Save and Retrieve Entries**:
+  - After entering workout details, save the entry to local storage by submitting the form.
+  - To retrieve previous entries, click on the "Load Up" button after logging in.
+- **Log Out and Lock**:
+  - To secure your Diary, use the "log out & lock" button to log out and lock the diary.
 
 ### Technologies Used
 - HTML, CSS, JavaScript
 
 ### Future Enhancements
 Potential updates, improvements, or additional features planned for future versions.
-
-Feel free to explore, contribute, or utilize this Fitness Diary for your workout tracking needs!
